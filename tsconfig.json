@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "keyofStringsOnly": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src", // all paths are relative to the baseUrl
+    "paths": {
+      "~/*": ["*"] // resolve any `~/foo/bar` to `<baseUrl>/foo/bar`
+    }
+  },
+  "typeRoots": ["node_modules/@types", "src/@type"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "./node_modules/**/*"
+  ],
+  "include": ["./src/**/*", "@type"]
+}
